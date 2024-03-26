@@ -1,0 +1,15 @@
+1. Se debe crear un script (sistema) que realice escalamiento en el tiempo de la señal
+de audio con diferentes valores (sugeridos más abajo). Para probarlo, el sistema
+utilizará la misma entrada, la cual es una señal de voz (de uno de los integrantes del
+grupo) con la frase: “Señales y sistemas. Primer Proyecto de Matlab”. Al usuario se le
+ofrecerá la posibilidad de escoger entre al menos seis diferentes opciones, la
+velocidad de reproducción de la señal.
+Se sugieren las siguientes velocidades:
+- 0,5 veces de la velocidad normal.
+- 0,80 veces de la velocidad normal.
+- A velocidad normal.
+- 1,20 veces de la velocidad normal.
+- 1,5 veces de la velocidad normal.
+- 2 veces de la velocidad normal.
+Luego de la elección, el usuario podrá escuchar la señal de audio con la
+característica elegida.
