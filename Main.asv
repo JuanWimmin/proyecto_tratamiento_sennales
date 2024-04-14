@@ -1,6 +1,6 @@
-%-----main----
+main()
 
-main();
+
 
 %----------------Llamado de directorios------
 
@@ -14,7 +14,7 @@ function main()
 actividad_1();
 
 %--------------llamado del menú
-state_holder();
+    state_holder();
 
 end
 

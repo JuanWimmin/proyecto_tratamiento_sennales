@@ -1,19 +1,6 @@
-%-----main----
-
-main();
-
-%----------------Llamado de directorios------
-
-addpath('actividades_preparacion\');
-
-%-----------------------
 
 function main()
 
-%------------llamado de actividades preparatorias----------
-actividad_1();
-
-%--------------llamado del menú
 state_holder();
 
 end
@@ -75,5 +62,3 @@ function menu_impulso()
     end
 
 end
-
-%-------------------------------------------------------------
