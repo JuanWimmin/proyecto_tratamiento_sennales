@@ -12,14 +12,10 @@ main();
 
 function main()
 
-
-
-%--------------llamado del menú
-state_holder();
+state_holder(); %llamado del menú
 
 end
 
-%-------------------------DECLARACIÓN-FUNCIONES----------------------------
 function state_holder()
     
     state = menu('Seleccione una opción: ','Ejecución actividades preparación' ,'Escalamiento', 'Inversión en tiempo','Respuesta impulso' );
@@ -40,17 +36,3 @@ function state_holder()
         end
 end       
        
-
-%----------------declaración de los estados-------------------
-
-
-
-%----------------------------------------------------------------
-
-
-%----------------------------------------------------------------
-
-
-
-
-%-------------------------------------------------------------
