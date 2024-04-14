@@ -5,7 +5,6 @@ main();
 %----------------Llamado de directorios------
 
 addpath('actividades_preparacion\');
-addpath('Respuesta Impulso\');
 
 %-----------------------
 
@@ -34,7 +33,7 @@ function state_holder()
                 menu_inversion();
                 main();
             case 4 
-                impulso();
+                menu_impulso();
                 main();
         end
 end       
@@ -68,7 +67,19 @@ function menu_inversion()
 end
 %----------------------------------------------------------------
 
+function menu_impulso()
+    current_state = menu('Seleccione una opción', 'Respuesta impulso1', 'Volver al menú principal');
+    
+    switch current_state
+        case 1
+            %ejecutar opcion 1
+        case 2
 
+        case 3
+        case 4
+           state_holder();
+    end
 
+end
 
 %-------------------------------------------------------------
