@@ -17,11 +17,11 @@ function impulso()
             respuesta_impulso(impulso2);
             impulso();
         case 3
-            impulso3 =audioread('SLIT_FV_E001_M2S.wav');
+            impulso3 =audioread('SLIT_MDA_E001_M2S.wav');
             respuesta_impulso(impulso3);
             impulso();
         case 4
-            impulso4 =audioread('SLIT_FV_E001_M2S.wav');
+            impulso4 =audioread('SLIT_SC_E001_M2S.wav');
             respuesta_impulso(impulso4);
             impulso();
         case 5
@@ -32,7 +32,7 @@ end
     function respuesta_impulso(sennal_impulso)
 
         [audio, fs1] = audioread('Respuesta impulso.aac');
-        y_impulso = conv(audio, sennal_impulso);
+        y_impulso = conv(audio(:), sennal_impulso(:));
         sound(y_impulso,fs1); % Reproduce la señal resultante
 
     end
