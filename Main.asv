@@ -1,4 +1,4 @@
-%Agregado direeciones de archivos
+%-----Agregado direeciones de los 
 
 addpath('actividades_preparacion\');
 addpath('Respuesta Impulso\');
@@ -8,7 +8,7 @@ addpath('Escalamiento\');
 
 main();
 
-%Declaración del main
+%-----------------------
 
 function main()
 
