@@ -6,6 +6,7 @@ main();
 
 addpath('actividades_preparacion\');
 addpath('Respuesta Impulso\');
+addpath('Inversión en el tiempo\');
 
 %-----------------------
 
@@ -28,10 +29,10 @@ function state_holder()
                 actividades_previas();
                 main();
             case 2
-                menu_escalamiento();
+                EscalamientoConOpciones();
                 main();
             case 3
-                menu_inversion();
+                InversionTiempoV2();
                 main();
             case 4 
                 impulso();
@@ -42,17 +43,8 @@ end
 
 %----------------declaración de los estados-------------------
 
-function menu_escalamiento()
-    current_state = menu('Seleccione una opción', 'opción 1', 'Volver al menú principal');
-    
-    switch current_state
-        case 1
-            %ejecutar opcion 1
-        case 2
-            state_holder();
-    end
 
-end
+
 %----------------------------------------------------------------
 
 function menu_inversion()
