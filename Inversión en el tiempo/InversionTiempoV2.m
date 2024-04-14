@@ -19,7 +19,7 @@ switch opcion
         frase = 'Odio la luz azul al oído';
     case 2
         x = y2;
-        fs = fs2;
+        fs = fr2;
         frase = 'Anita lava la tina';
     case 3
         x = y3;

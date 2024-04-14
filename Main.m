@@ -1,12 +1,12 @@
 %-----main----
 
-main();
-
-%----------------Llamado de directorios------
-
 addpath('actividades_preparacion\');
 addpath('Respuesta Impulso\');
 addpath('Inversión en el tiempo\');
+addpath('Escalamiento\');
+
+
+main();
 
 %-----------------------
 
@@ -47,17 +47,7 @@ end
 
 %----------------------------------------------------------------
 
-function menu_inversion()
-    current_state = menu('Seleccione una opción', 'opción 1', 'Volver al menú principal');
-    
-    switch current_state
-        case 1
-            %ejecutar opcion 1
-        case 2
-            state_holder();
-    end
 
-end
 %----------------------------------------------------------------
 
 
