@@ -2,12 +2,12 @@
 
 function actividad_1()
 
-    addpath('resources-audio');
+    
 %-------------------------------------ACTIVIDAD #1----------------
     
     %importacion de la senal
-    [x1,fs1] = audioread('Respuesta impulso.aac');
-    [x2,fs2] = audioread('Odio la luz al oído.aac');
+[x1,fs1] = audioread('Respuesta Impulso.aac');
+    [x2,fs2] = audioread('Odio la luz al oido.aac');
     [x3,fs3] = audioread('Audio-Escalamiento.aac');
     
     % 5. Compare los valores de fs1, fs2 y fs3.
