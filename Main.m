@@ -10,8 +10,7 @@ addpath('actividades_preparacion\');
 
 function main()
 
-%------------llamado de actividades preparatorias----------
-actividades_previas();
+
 
 %--------------llamado del menú
 state_holder();
@@ -21,17 +20,21 @@ end
 %-------------------------DECLARACIÓN-FUNCIONES----------------------------
 function state_holder()
     
-    state = menu('Seleccione una opción: ', 'Escalamiento', 'Inversión en tiempo','Respuesta impulso' );
+    state = menu('Seleccione una opción: ','Ejecución actividades preparación' ,'Escalamiento', 'Inversión en tiempo','Respuesta impulso' );
     
         switch state 
             case 1
-                menu_escalamiento();
-            
+                actividades_previas();
+                main();
             case 2
+                menu_escalamiento();
+                main();
+            case 3
                 menu_inversion();
-            
-            case 3 
+                main();
+            case 4 
                 menu_impulso();
+                main();
         end
 end       
        
