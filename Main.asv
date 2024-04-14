@@ -1,23 +1,21 @@
-%-----main----
-
-main();
-
-%----------------Llamado de directorios------
+%-----Agregado direeciones de los 
 
 addpath('actividades_preparacion\');
+addpath('Respuesta Impulso\');
+addpath('Inversión en el tiempo\');
+addpath('Escalamiento\');
+
+
+main();
 
 %-----------------------
 
 function main()
 
-
-
-%--------------llamado del menú
-state_holder();
+state_holder(); %llamado del menú
 
 end
 
-%-------------------------DECLARACIÓN-FUNCIONES----------------------------
 function state_holder()
     
     state = menu('Seleccione una opción: ','Ejecución actividades preparación' ,'Escalamiento', 'Inversión en tiempo','Respuesta impulso' );
@@ -27,59 +25,14 @@ function state_holder()
                 actividades_previas();
                 main();
             case 2
-                menu_escalamiento();
+                EscalamientoConOpciones();
                 main();
             case 3
-                menu_inversion();
+                InversionTiempoV2();
                 main();
             case 4 
-                menu_impulso();
+                impulso();
                 main();
         end
 end       
        
-
-%----------------declaración de los estados-------------------
-
-function menu_escalamiento()
-    current_state = menu('Seleccione una opción', 'opción 1', 'Volver al menú principal');
-    
-    switch current_state
-        case 1
-            %ejecutar opcion 1
-        case 2
-            state_holder();
-    end
-
-end
-%----------------------------------------------------------------
-
-function menu_inversion()
-    current_state = menu('Seleccione una opción', 'opción 1', 'Volver al menú principal');
-    
-    switch current_state
-        case 1
-            %ejecutar opcion 1
-        case 2
-            state_holder();
-    end
-
-end
-%----------------------------------------------------------------
-
-function menu_impulso()
-    current_state = menu('Seleccione una opción', 'Respuesta impulso1', 'Volver al menú principal');
-    
-    switch current_state
-        case 1
-            %ejecutar opcion 1
-        case 2
-
-        case 3
-        case 4
-           state_holder();
-    end
-
-end
-
-%-------------------------------------------------------------

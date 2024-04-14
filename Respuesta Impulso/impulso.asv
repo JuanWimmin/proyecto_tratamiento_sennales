@@ -5,30 +5,26 @@
 function impulso()
     addpath('main\');
 
-    current_state = menu('Seleccione una opción','Audio original', 'Respuesta impulso 1','Respuesta impulso 2','Respuesta impulso 3','Respuesta impulso 4' ,'Volver al menú principal');
+    current_state = menu('Seleccione una opción','Audio origina', 'Respuesta impulso 1','Respuesta impulso 2','Respuesta impulso 3','Respuesta impulso 4' ,'Volver al menú principal');
     
     switch current_state
         case 1
-            [audio, fs1] = audioread('Respuesta impulso.aac');
-            sound(audio,fs1);
-            impulso();
-        case 2
             impulso1 =audioread('MMR.wav');
             respuesta_impulso(impulso1);
             impulso();
-        case 3
+        case 2
             impulso2 =audioread('SLIT_FV_E001_M2S.wav');
             respuesta_impulso(impulso2);
             impulso();
-        case 4
+        case 3
             impulso3 =audioread('SLIT_MDA_E001_M2S.wav');
             respuesta_impulso(impulso3);
             impulso();
-        case 5
+        case 4
             impulso4 =audioread('SLIT_SC_E001_M2S.wav');
             respuesta_impulso(impulso4);
             impulso();
-        case 6
+        case 5
            state_holder();
     end
 end

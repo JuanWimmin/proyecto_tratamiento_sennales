@@ -1,4 +1,4 @@
-    [AudioEscalamiento,frecuenciaEsc] = audioread('Audio-Escalamiento.aac');
+[AudioEscalamiento,frecuenciaEsc] = audioread('Audio-Escalamiento.aac');
     % Presentar las opciones al usuario
     fprintf('Opciones de velocidad de reproducción:\n');
     fprintf('1. 0.5 veces la velocidad normal.\n');
@@ -31,11 +31,11 @@
     %frecuenciaEsc1 = squeeze(frecuenciaEsc);
     %AudioEscalamiento = AudioEscalamiento(:);
     %frecuenciaEsc = frecuenciaEsc(:);
+    duracion_esc = length(AudioEscalamiento) / frecuenciaEsc;
     nueva_fs = frecuenciaEsc * velocidad;
     % Aplicar el escalamiento en el tiempo
     %x_esc = resample(AudioEscalamiento, nueva_fs, frecuenciaEsc);
     
     % Reproducir la señal de audio resultante
     sound(AudioEscalamiento, nueva_fs);
-    pause(duracion_x3+ 1); % Pausa para permitir la reproducción completa antes de la siguiente
-
+    pause(duracion_esc+ 1); % Pausa para permitir la reproducción completa antes de la siguiente
